@@ -1,8 +1,13 @@
 # JDBC-LoginSystem
 这是我在2021年12月做的的JDBC-Login系统<br>
 当初自学了一段时间Java之后，向着Java能否连接MySql于是便去上网查阅资料，得知了Java对接MySql需要JDBC，于是一套Login系统出现了<br>
-在这个项目中除了LoginSystem是Login系统的内部文件，其余都是在自学JDBC的过程中创建的测试文件。
+在这个项目中除了LoginSystem是Login系统的内部文件，其余都是在自学JDBC的过程中创建的测试文件。<br>
+如果要运行LoginSystem,需要事先准备好mysql的jar包，不用一样只需要5.x以上的版本。
+然后用IDEA或是eclipse创建普通工程，然后导入mysql的jar包。在src下创建LoginSystem文件夹然后把所有java文件放进去即可<br>
+Login是程序入口，登录root可以做类似操作数据库一样进行查询和增删。在控制台输入add：增加用户，select：查询用户，delete：删除用户，exit & quit：退出登录
+DBUtils是专门连接数据库的类。即内部写好了关于连接的相关操作并通过getConnection()进行返回对象。DoLogin,Resign,Select以及Delete则是对应Login中的各种操作实现类，在此不一一分析。
 
+# 序
 要想实现Java连接到MySql需要引入一个名为mysql-connector-java的jar包，这个包一般在下载MySql时会自带一个这样的jar包。<br>
 我使用的MySql是8.0.27的版本。<br>
 由于这个项目(也许不算一个项目)距离现在也有一段时间，那个时候遇到了很多很多的问题，比如MySql无法使用root登录遇到了很多错误，但是
