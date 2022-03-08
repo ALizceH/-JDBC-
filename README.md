@@ -1,3 +1,4 @@
+<body>
 <h1 >JDBC-LoginSystem</h1>
 <h2 >前言</h2>
 	<div style="text-indent: 25px">
@@ -77,3 +78,5 @@
 <p>通过ResultSet类对象，我们可以用rst.next()来判断是否有值传回来，因为next()方法通过源码分析是boolean类型。</p>
 <p>如果结果为真，说明rst的确获取到对象，我们就可以通过get方法去将内部值获取，然后用System.out.println进行输出。</p>
 <p>&nbsp;</p>
+</div>
+</body>
