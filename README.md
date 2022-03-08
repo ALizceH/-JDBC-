@@ -42,5 +42,7 @@ url就是我们上一步写的url,user和password则对应的是连接数据库�
 如果你需要对数据表内的内容进行增删，那么就创建PreparedStatement类对象。创建它的对象指向之前Connection对象的prepareStatement()方法，并在其中传入sql参数，也就是之前也好的sql语句。<br>
 关于Statement类对象，我们还需要创建ResultSet类对象将它指向Statement类对象的executeQuery()并在其中传入sql参数，也就是之前也好的sql语句。<br>
 
-# 将MySql查询到的数据返回到Java中
-未完待续.....
+# 将MySql查询到的数据返回到Java中 & 在Java中做输出工作
+通过ResultSet类对象，我们可以用rst.next()来判断是否有值传回来，因为next()方法通过源码分析是boolean类型。<br>
+如果结果为真，说明rst的确获取到对象，我们就可以通过get方法去将内部值获取，然后用System.out.println进行输出。<br>
+
